@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>imageName</key>
+	<array>
+		<string>appmodule_Flashlight</string>
+		<string>appmodule_helper</string>
+		<string>appmodule_kbdpro</string>
+		<string>appmodule_liebao</string>
+	</array>
+	<key>label1</key>
+	<array>
+		<string>免费应用</string>
+		<string>当前耗电</string>
+		<string>可优化选项</string>
+		<string>本月充电情况</string>
+	</array>
+	<key>label2</key>
+	<array>
+		<string>限时下载</string>
+		<string>详情</string>
+		<string>3项</string>
+		<string>无安全充电</string>
+	</array>
+</dict>
+</plist>
