@@ -56,6 +56,7 @@ extension ViewController: UITableViewDataSource {
         cell.discribe.text = labelText["label2"]![indexPath.row]
         print(labelText["imageName"]![indexPath.row])
         print(NSBundle.mainBundle().pathForResource(labelText["imageName"]![indexPath.row], ofType: "png", inDirectory: "SettingImages"))
+        cell.headImage.image = UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource(labelText["imageName"]![indexPath.row], ofType: "png", inDirectory: "SettingImages")!)
         return cell
         
     }

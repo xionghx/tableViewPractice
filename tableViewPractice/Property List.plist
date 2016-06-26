@@ -4,10 +4,10 @@
 <dict>
 	<key>imageName</key>
 	<array>
-		<string>appmodule_Flashlight</string>
-		<string>appmodule_helper</string>
-		<string>appmodule_kbdpro</string>
-		<string>appmodule_liebao</string>
+		<string>appmodule_Flashlight@2x</string>
+		<string>appmodule_helper@2x</string>
+		<string>appmodule_kbdpro@2x</string>
+		<string>appmodule_liebao@2x</string>
 	</array>
 	<key>label1</key>
 	<array>
