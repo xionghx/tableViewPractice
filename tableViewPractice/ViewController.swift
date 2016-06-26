@@ -54,13 +54,8 @@ extension ViewController: UITableViewDataSource {
         let cell:CustomTableViewCell = tableView.dequeueReusableCellWithIdentifier(String(CustomTableViewCell), forIndexPath: indexPath) as! CustomTableViewCell
         cell.titleLabel.text = labelText["label1"]![indexPath.row]
         cell.discribe.text = labelText["label2"]![indexPath.row]
-//        cell.headImage.image  = UIImage(contentsOfFile: "SettingImages/appmodule_Flashlight@2x.png")
-//        cell.headImage.image = UIImage(named: "appmodule_Flashlight@2x.png")
         print(labelText["imageName"]![indexPath.row])
-//        let a = NSBundle.mainBundle().pathForResource(labelText["imageName"]![indexPath.row], ofType: "png",inDirectory: "SettingImages/")
         print(NSBundle.mainBundle().pathForResource(labelText["imageName"]![indexPath.row], ofType: "png", inDirectory: "SettingImages"))
-        
-//        cell.headImage.image = UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource(labelText["imageName"]![indexPath.row], ofType: "png",inDirectory: "/SettingImages")!)
         return cell
         
     }
@@ -71,12 +66,10 @@ extension ViewController: UITableViewDelegate {
     //        return true
     //    }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
     }
     func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
         return "删除"
     }
-    
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             labelText["label1"]!.removeAtIndex(indexPath.row)
